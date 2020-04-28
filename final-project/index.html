@@ -1,0 +1,175 @@
+<!-- This webpage is an article on UMD Comedy Groups. It goes over the different
+groups on campus and uses graphics to show statistics on the groups.
+Moreover, the article shows photographs of these groups performing
+in differnt comedy mediums
+-->
+
+<!DOCTYPE HTML>
+<HTML lang="en">
+
+<!-- heading and title -->
+
+<head>
+  <title> Behind the Laughter </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto " rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!--The first section of the page is the title with a curtain background-->
+    <div class="container">
+      <h1>Behind the Laughter</h1>
+    </div>
+  </header>
+  <!-- This begins the article with the name and a gallary of photographs-->
+  <div class="container section__first">
+    <h2>
+      A Look into UMD Comedy Groups
+    </h2>
+    <p> By Ambi Narula </p>
+    <div class="row">
+      <!-- This is for a slideshow of photos of students performing comedy -->
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="kayla.jpg" class="gallaryImage" alt="improv">
+          <div class="text"> <span>UMD Bureau performs improv with students acting they are watching TV. Credit: Ambi Narula</span></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="purple.jpg" class="gallaryImage" alt="Inc">
+          <div class="text"><span>Erasable Inc performs Improv with Yale's improv troupe, Purple Crayon. Credit: Ambi Narula</span></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="sammy.jpg" class="gallaryImage" alt="Sammy">
+          <div class="text"><span>Performer, Sammy Gracia gets his head shaved during a sketch for Maryland Night Live. Credit: Ambi Narula </span> </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="bureau.jpg" class="gallaryImage" alt="Bureau">
+          <div class="text"><span>UMD Bureau performs improv with students acting like birds. Credit: Ambi Narula </span></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="mnl.png" class="gallaryImage" alt="classroom">
+          <div class="text"><span>Maryland Night live performers a classroom sketch. Credit: Ambi Narula</span></div>
+        </div>
+
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+
+      <!-- This is javascript used to move the next picture and back -->
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {
+            slideIndex = 1
+          }
+          if (n < 1) {
+            slideIndex = slides.length
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+    </div>
+  </div>
+  <!-- This is a section of the article with a graphic-->
+  <div class="container row">
+    <div>
+      <p>
+        The University of Maryland, College Park known for its diversity, features but several unique comedy groups. At the moment, there are five groups on campus, each with their own structure, traditions, and style of humor.
+      <p> <b> <a href="http://www.erasable-inc.com/"> Erasable Inc,1986 </a> </b> </p>
+      <p> In 1986, Erasable Inc was founded with the help of Yale’s improv group the Purple Crayon. “Inc.” for short, it is the only all-improv group on campus, offering a variety of performances in long and short form improv. The difference between
+        the two, is if performance has games, it is considered short form improv.
+        “Improv is different from any other style of comedy. Anything can happen,” said Stephaine Moy, a current member of Inc. During its performances, which occur every Friday from 1-2 p.m. on the steps of McKeldin Library, Inc. takes suggestions
+        from the audience and uses them as inspiration for its scenes. Depending on the two people in a scene, a specific type of humor develops. </p>
+      <p> <b> <a href="https://www.sketchupcomedy.com/"> Sketchup,1996 </a> </b> </p>
+      <p> In 1996, Sketchup was formed to create its own production of only skit or “sketch” styled shows on campus. Sketch comedy can be defined as a series of short scenes between one and ten minutes long providing audiences a mix of different
+        humor styles and short punchlines.“When I first auditioned for Sketchup it was just for fun, but once I went through the first round of auditions, I fell in love with it. I could tell that it was something I wanted to do and a group of people
+        I wanted to be around,” said Grace Chubb, a current member of Sketchup.Students constantly work on re-writing and re-concep9tualizing sketches in this specialized form of comedy. Because of the nature of its rehearsal process, Sketchup
+        performs one show every semester at the Hoff Theater in STAMP including all 16 members. </p>
+    </div>
+    <img src="umd-comedy-main-locations.png" alt="comedy locations on campus" />
+  </div>
+  <!-- This is the next section of the article with a grpahics-->
+  <div class="container row">
+    <img src="diversity.png" alt="Diversity in comedy groups" />
+    <div>
+      <p>
+      <p> <b> <a href="https://terplink.umd.edu/organization/the-bureau"> The Bureau, 2005 </a> </b> </p>
+
+      <p> The Bureau founded in 2005, is UMD’s only co-ed all-purpose comedy group; performing in stand up, improv and sketch comedy.
+        “The Bureau brings something different to the table. We’re the only co-ed group that accepts seniors and also the only group that performs in regional shows and competitions around the DMV area,” said Alex Parsly, a current member of the
+        group.
+        The Bureau performs several times throughout the semester, including hosting two improv shows and a sketch show, as well as performing in festivals at other colleges. It targets all types of humor, but many times the material can be slightly
+        darker than other groups on campus.</p>
+
+      <p> <b> <a href="https://sites.google.com/view/mdnightlive/"> Maryland Night Live, 2019 </a> </b> </p>
+
+      <p> In 2019, two new comedy groups emerged into the mix: Maryland Night Live, a Saturday Night Live-styled show, and The Hysterics, UMD’s all-female comedy group.
+        Maryland Night Live has put on four shows since last spring. It brought a new environment to the comedy scene allowing students in different groups to join forces in a new entertainment show format.
+        “We’re something beyond the typical college comedy group. We’re more professional similarly to SNL and our past shows reflect that,” said Walker Green, co-founder, and producer.
+        “If it’s an MNL production you’re watching, you know it's going to be the best.” Maryland Night Live takes six weeks to produce one show. Within that time students takes three weeks to write and rewrite sketches and three weeks of rehearsals
+        with a cast of 15 to 20 members. Maryland Night Live also provides its own jazz band and two musical guests, just like a SNL show. </p>
+    </div>
+  </div>
+  <!-- This is the last section of the article with the last graphic and a conclusion-->
+  <div class="container row">
+    <div>
+      <p>
+      <p> <b> <a href="https://terplink.umd.edu/organization/the-hysterics"> The Hysterics, 2019 </a> </b> </p>
+
+      <p> The Hysterics created a space for female-identifying comedians to practice stand-up sets, improv, and write sketches to promote women in comedy around campus.
+        “I think this group will help other female comedians and performers build up the confidence to perform on stage,” said Rachel Niswander, a current member.
+        The Hysterics foster an environment for students who identify as female to be around other women, network, and grow their comedy skills. Thus far they performed stand up and short form improv and hope to expand into sketch writing and
+        performances. The Hysterics is the only group to have gained mentorship from well-known comedians. The mentorship of Nikki Glaser and Lisa Best gave the members the opportunity to open for Nikki Glaser at DC improv this past November. </p>
+
+      <p> The UMD comedy scene has grown into a community of over 40 students trying to provide entertainment to their peers. Every group has talented members and many of them have hopes
+        of becoming the next star in the comedy world. </p>
+
+    </div>
+    <img src="college.png" alt="After college" />
+  </div>
+
+  <footer>
+    <a href="portfolio/index.html">&copy; Copyright 2020 Ambi Narula</a>
+
+  </footer>
+
+</body>
+
+</html>
