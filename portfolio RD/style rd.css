@@ -1,0 +1,60 @@
+body {
+  background-color: #ADD8E6;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+.portfoliolist {
+      text-align: center;
+}
+
+
+span.a {
+  display: inline;
+  width: 100px;
+  height: 100px;
+  background-color: #FF8333;
+}
+
+span.b {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color:#FFFE33;
+}
+
+span.c {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color:#33FF9B;
+  {
+
+}
+
+    span.d {
+      display: block;
+      width: 100px;
+      height: 100px;
+      background-color:#335DFF;
+  }
+
+  span.e {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #FF3380;
+
+
+}
